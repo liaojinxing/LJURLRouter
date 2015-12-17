@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A89418AC1C229D3500989D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418AB1C229D3500989D1C /* main.m */; };
+		A89418AF1C229D3500989D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418AE1C229D3500989D1C /* AppDelegate.m */; };
+		A89418B21C229D3500989D1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418B11C229D3500989D1C /* ViewController.m */; };
+		A89418B51C229D3500989D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89418B31C229D3500989D1C /* Main.storyboard */; };
+		A89418B71C229D3500989D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89418B61C229D3500989D1C /* Assets.xcassets */; };
+		A89418BA1C229D3500989D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89418B81C229D3500989D1C /* LaunchScreen.storyboard */; };
+		A89418C51C229D3500989D1C /* LJURLRouterExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418C41C229D3500989D1C /* LJURLRouterExampleTests.m */; };
+		A89418D01C229D3500989D1C /* LJURLRouterExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418CF1C229D3500989D1C /* LJURLRouterExampleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A89418C11C229D3500989D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A894189F1C229D3500989D1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89418A61C229D3500989D1C;
+			remoteInfo = LJURLRouterExample;
+		};
+		A89418CC1C229D3500989D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A894189F1C229D3500989D1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89418A61C229D3500989D1C;
+			remoteInfo = LJURLRouterExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A89418A71C229D3500989D1C /* LJURLRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJURLRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89418AB1C229D3500989D1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A89418AD1C229D3500989D1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A89418AE1C229D3500989D1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A89418B01C229D3500989D1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A89418B11C229D3500989D1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A89418B41C229D3500989D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A89418B61C229D3500989D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A89418B91C229D3500989D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A89418BB1C229D3500989D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A89418C01C229D3500989D1C /* LJURLRouterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJURLRouterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89418C41C229D3500989D1C /* LJURLRouterExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJURLRouterExampleTests.m; sourceTree = "<group>"; };
+		A89418C61C229D3500989D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A89418CB1C229D3500989D1C /* LJURLRouterExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJURLRouterExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89418CF1C229D3500989D1C /* LJURLRouterExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJURLRouterExampleUITests.m; sourceTree = "<group>"; };
+		A89418D11C229D3500989D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A89418A41C229D3500989D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418BD1C229D3500989D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418C81C229D3500989D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A894189E1C229D3500989D1C = {
+			isa = PBXGroup;
+			children = (
+				A89418A91C229D3500989D1C /* LJURLRouterExample */,
+				A89418C31C229D3500989D1C /* LJURLRouterExampleTests */,
+				A89418CE1C229D3500989D1C /* LJURLRouterExampleUITests */,
+				A89418A81C229D3500989D1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A89418A81C229D3500989D1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A89418A71C229D3500989D1C /* LJURLRouterExample.app */,
+				A89418C01C229D3500989D1C /* LJURLRouterExampleTests.xctest */,
+				A89418CB1C229D3500989D1C /* LJURLRouterExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A89418A91C229D3500989D1C /* LJURLRouterExample */ = {
+			isa = PBXGroup;
+			children = (
+				A89418AD1C229D3500989D1C /* AppDelegate.h */,
+				A89418AE1C229D3500989D1C /* AppDelegate.m */,
+				A89418B01C229D3500989D1C /* ViewController.h */,
+				A89418B11C229D3500989D1C /* ViewController.m */,
+				A89418B31C229D3500989D1C /* Main.storyboard */,
+				A89418B61C229D3500989D1C /* Assets.xcassets */,
+				A89418B81C229D3500989D1C /* LaunchScreen.storyboard */,
+				A89418BB1C229D3500989D1C /* Info.plist */,
+				A89418AA1C229D3500989D1C /* Supporting Files */,
+			);
+			path = LJURLRouterExample;
+			sourceTree = "<group>";
+		};
+		A89418AA1C229D3500989D1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A89418AB1C229D3500989D1C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A89418C31C229D3500989D1C /* LJURLRouterExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A89418C41C229D3500989D1C /* LJURLRouterExampleTests.m */,
+				A89418C61C229D3500989D1C /* Info.plist */,
+			);
+			path = LJURLRouterExampleTests;
+			sourceTree = "<group>";
+		};
+		A89418CE1C229D3500989D1C /* LJURLRouterExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A89418CF1C229D3500989D1C /* LJURLRouterExampleUITests.m */,
+				A89418D11C229D3500989D1C /* Info.plist */,
+			);
+			path = LJURLRouterExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A89418A61C229D3500989D1C /* LJURLRouterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89418D41C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExample" */;
+			buildPhases = (
+				A89418A31C229D3500989D1C /* Sources */,
+				A89418A41C229D3500989D1C /* Frameworks */,
+				A89418A51C229D3500989D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJURLRouterExample;
+			productName = LJURLRouterExample;
+			productReference = A89418A71C229D3500989D1C /* LJURLRouterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A89418BF1C229D3500989D1C /* LJURLRouterExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89418D71C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleTests" */;
+			buildPhases = (
+				A89418BC1C229D3500989D1C /* Sources */,
+				A89418BD1C229D3500989D1C /* Frameworks */,
+				A89418BE1C229D3500989D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A89418C21C229D3500989D1C /* PBXTargetDependency */,
+			);
+			name = LJURLRouterExampleTests;
+			productName = LJURLRouterExampleTests;
+			productReference = A89418C01C229D3500989D1C /* LJURLRouterExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A89418CA1C229D3500989D1C /* LJURLRouterExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89418DA1C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleUITests" */;
+			buildPhases = (
+				A89418C71C229D3500989D1C /* Sources */,
+				A89418C81C229D3500989D1C /* Frameworks */,
+				A89418C91C229D3500989D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A89418CD1C229D3500989D1C /* PBXTargetDependency */,
+			);
+			name = LJURLRouterExampleUITests;
+			productName = LJURLRouterExampleUITests;
+			productReference = A89418CB1C229D3500989D1C /* LJURLRouterExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A894189F1C229D3500989D1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jinxing Liao";
+				TargetAttributes = {
+					A89418A61C229D3500989D1C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A89418BF1C229D3500989D1C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A89418A61C229D3500989D1C;
+					};
+					A89418CA1C229D3500989D1C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A89418A61C229D3500989D1C;
+					};
+				};
+			};
+			buildConfigurationList = A89418A21C229D3500989D1C /* Build configuration list for PBXProject "LJURLRouterExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A894189E1C229D3500989D1C;
+			productRefGroup = A89418A81C229D3500989D1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A89418A61C229D3500989D1C /* LJURLRouterExample */,
+				A89418BF1C229D3500989D1C /* LJURLRouterExampleTests */,
+				A89418CA1C229D3500989D1C /* LJURLRouterExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A89418A51C229D3500989D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89418BA1C229D3500989D1C /* LaunchScreen.storyboard in Resources */,
+				A89418B71C229D3500989D1C /* Assets.xcassets in Resources */,
+				A89418B51C229D3500989D1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418BE1C229D3500989D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418C91C229D3500989D1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A89418A31C229D3500989D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89418B21C229D3500989D1C /* ViewController.m in Sources */,
+				A89418AF1C229D3500989D1C /* AppDelegate.m in Sources */,
+				A89418AC1C229D3500989D1C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418BC1C229D3500989D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89418C51C229D3500989D1C /* LJURLRouterExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89418C71C229D3500989D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89418D01C229D3500989D1C /* LJURLRouterExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A89418C21C229D3500989D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89418A61C229D3500989D1C /* LJURLRouterExample */;
+			targetProxy = A89418C11C229D3500989D1C /* PBXContainerItemProxy */;
+		};
+		A89418CD1C229D3500989D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89418A61C229D3500989D1C /* LJURLRouterExample */;
+			targetProxy = A89418CC1C229D3500989D1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A89418B31C229D3500989D1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89418B41C229D3500989D1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A89418B81C229D3500989D1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A89418B91C229D3500989D1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A89418D21C229D3500989D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A89418D31C229D3500989D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A89418D51C229D3500989D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJURLRouterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A89418D61C229D3500989D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJURLRouterExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A89418D81C229D3500989D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LJURLRouterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJURLRouterExample.app/LJURLRouterExample";
+			};
+			name = Debug;
+		};
+		A89418D91C229D3500989D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LJURLRouterExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJURLRouterExample.app/LJURLRouterExample";
+			};
+			name = Release;
+		};
+		A89418DB1C229D3500989D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LJURLRouterExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LJURLRouterExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A89418DC1C229D3500989D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LJURLRouterExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.jinxing.LJURLRouterExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LJURLRouterExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A89418A21C229D3500989D1C /* Build configuration list for PBXProject "LJURLRouterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89418D21C229D3500989D1C /* Debug */,
+				A89418D31C229D3500989D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89418D41C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89418D51C229D3500989D1C /* Debug */,
+				A89418D61C229D3500989D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A89418D71C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89418D81C229D3500989D1C /* Debug */,
+				A89418D91C229D3500989D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A89418DA1C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89418DB1C229D3500989D1C /* Debug */,
+				A89418DC1C229D3500989D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A894189F1C229D3500989D1C /* Project object */;
+}
