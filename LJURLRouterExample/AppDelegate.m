@@ -1,12 +1,16 @@
 //
 //  AppDelegate.m
-//  LJURLRouterExample
+//  LJControllerRouterExample
 //
-//  Created by Jinxing Liao on 12/17/15.
+//  Created by Jinxing Liao on 12/14/15.
 //  Copyright © 2015 Jinxing Liao. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ProfileViewController.h"
+#import "HomeViewController.h"
+#import "LJURLRouter.h"
+#import "RoutableModel.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[LJURLRouter sharedRouter] registerDefaultSchema:@"lj"];
+    [[LJURLRouter sharedRouter] registerURL:@"/profile/:profile_id" forClass:[ProfileViewController class]];
+    [[LJURLRouter sharedRouter] registerURL:@"/home" forClass:[HomeViewController class]];
+    [[LJURLRouter sharedRouter] registerURL:@"/model/:name/:json/" forClass:[RoutableModel class]];
+    
+    HomeViewController *controller = [[HomeViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

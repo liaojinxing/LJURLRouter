@@ -7,6 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "LJURLRouter.h"
+#import "HomeViewController.h"
+#import "ProfileViewController.h"
+#import "RoutableModel.h"
 
 @interface LJURLRouterExampleTests : XCTestCase
 
@@ -16,24 +20,44 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testRouteMapping {
+    [[LJURLRouter sharedRouter] registerURL:@"/profile" forClass:[ProfileViewController class]];
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile"];
+    XCTAssertTrue([instance isKindOfClass:[ProfileViewController class]]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testRouteParams {
+    [[LJURLRouter sharedRouter] registerURL:@"/profile/:profile_id" forClass:[ProfileViewController class]];
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?param1=hello&param2=world"];
+    XCTAssertTrue([instance isKindOfClass:[ProfileViewController class]]);
+    ProfileViewController *controller = (ProfileViewController *)instance;
+    XCTAssertEqual(controller.params.allKeys.count, 3);
+    XCTAssertTrue([[controller.params objectForKey:@"profile_id"] isEqualToString:@"123"]);
+    XCTAssertTrue([[controller.params objectForKey:@"param1"] isEqualToString:@"hello"]);
+    XCTAssertTrue([[controller.params objectForKey:@"param2"] isEqualToString:@"world"]);
+}
+
+- (void)testRouteSchema {
+    [[LJURLRouter sharedRouter] registerDefaultSchema:@"lj"];
+    [[LJURLRouter sharedRouter] registerURL:@"/profile" forClass:[ProfileViewController class]];
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"lj://profile"];
+    XCTAssertTrue([instance isKindOfClass:[ProfileViewController class]]);
+}
+
+- (void)testRoutableModel {
+    [[LJURLRouter sharedRouter] registerURL:@"/model/:name/:json/" forClass:[RoutableModel class]];
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/model/liao jinxing/{\"face\":\"handsome\"}"];
+    XCTAssertTrue([instance isKindOfClass:[RoutableModel class]]);
+    RoutableModel *model = (RoutableModel *)instance;
+    XCTAssertEqualObjects(model.name, @"liao jinxing");
+    XCTAssertEqual(model.dictFromJSON.allKeys.count, 1);
+    XCTAssertEqualObjects([model.dictFromJSON objectForKey:@"face"], @"handsome");
 }
 
 @end

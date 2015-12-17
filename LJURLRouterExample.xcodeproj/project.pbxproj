@@ -15,6 +15,13 @@
 		A89418BA1C229D3500989D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89418B81C229D3500989D1C /* LaunchScreen.storyboard */; };
 		A89418C51C229D3500989D1C /* LJURLRouterExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418C41C229D3500989D1C /* LJURLRouterExampleTests.m */; };
 		A89418D01C229D3500989D1C /* LJURLRouterExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418CF1C229D3500989D1C /* LJURLRouterExampleUITests.m */; };
+		A89418E41C229DD000989D1C /* LJRouterIndexTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418DF1C229DD000989D1C /* LJRouterIndexTree.m */; settings = {ASSET_TAGS = (); }; };
+		A89418E51C229DD000989D1C /* LJURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418E11C229DD000989D1C /* LJURLRouter.m */; settings = {ASSET_TAGS = (); }; };
+		A89418E61C229DD000989D1C /* LJRouterPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418E31C229DD000989D1C /* LJRouterPath.m */; settings = {ASSET_TAGS = (); }; };
+		A89418EB1C229E9C00989D1C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418E81C229E9C00989D1C /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A89418EC1C229E9C00989D1C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418EA1C229E9C00989D1C /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A89418EF1C22A04700989D1C /* UIViewController+LJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */; settings = {ASSET_TAGS = (); }; };
+		A89418F21C22A5AC00989D1C /* RoutableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418F11C22A5AC00989D1C /* RoutableModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		A89418CB1C229D3500989D1C /* LJURLRouterExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJURLRouterExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89418CF1C229D3500989D1C /* LJURLRouterExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJURLRouterExampleUITests.m; sourceTree = "<group>"; };
 		A89418D11C229D3500989D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A89418DE1C229DD000989D1C /* LJRouterIndexTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJRouterIndexTree.h; path = LJURLRouter/LJRouterIndexTree.h; sourceTree = "<group>"; };
+		A89418DF1C229DD000989D1C /* LJRouterIndexTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJRouterIndexTree.m; path = LJURLRouter/LJRouterIndexTree.m; sourceTree = "<group>"; };
+		A89418E01C229DD000989D1C /* LJURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJURLRouter.h; path = LJURLRouter/LJURLRouter.h; sourceTree = "<group>"; };
+		A89418E11C229DD000989D1C /* LJURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJURLRouter.m; path = LJURLRouter/LJURLRouter.m; sourceTree = "<group>"; };
+		A89418E21C229DD000989D1C /* LJRouterPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJRouterPath.h; path = LJURLRouter/LJRouterPath.h; sourceTree = "<group>"; };
+		A89418E31C229DD000989D1C /* LJRouterPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJRouterPath.m; path = LJURLRouter/LJRouterPath.m; sourceTree = "<group>"; };
+		A89418E71C229E9C00989D1C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A89418E81C229E9C00989D1C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A89418E91C229E9C00989D1C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A89418EA1C229E9C00989D1C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A89418ED1C22A04700989D1C /* UIViewController+LJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJRouter.h"; sourceTree = "<group>"; };
+		A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJRouter.m"; sourceTree = "<group>"; };
+		A89418F01C22A5AC00989D1C /* RoutableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutableModel.h; sourceTree = "<group>"; };
+		A89418F11C22A5AC00989D1C /* RoutableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutableModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +102,7 @@
 		A894189E1C229D3500989D1C = {
 			isa = PBXGroup;
 			children = (
+				A89418DD1C229D4100989D1C /* LJURLRouter */,
 				A89418A91C229D3500989D1C /* LJURLRouterExample */,
 				A89418C31C229D3500989D1C /* LJURLRouterExampleTests */,
 				A89418CE1C229D3500989D1C /* LJURLRouterExampleUITests */,
@@ -101,6 +123,12 @@
 		A89418A91C229D3500989D1C /* LJURLRouterExample */ = {
 			isa = PBXGroup;
 			children = (
+				A89418F01C22A5AC00989D1C /* RoutableModel.h */,
+				A89418F11C22A5AC00989D1C /* RoutableModel.m */,
+				A89418E71C229E9C00989D1C /* HomeViewController.h */,
+				A89418E81C229E9C00989D1C /* HomeViewController.m */,
+				A89418E91C229E9C00989D1C /* ProfileViewController.h */,
+				A89418EA1C229E9C00989D1C /* ProfileViewController.m */,
 				A89418AD1C229D3500989D1C /* AppDelegate.h */,
 				A89418AE1C229D3500989D1C /* AppDelegate.m */,
 				A89418B01C229D3500989D1C /* ViewController.h */,
@@ -138,6 +166,21 @@
 				A89418D11C229D3500989D1C /* Info.plist */,
 			);
 			path = LJURLRouterExampleUITests;
+			sourceTree = "<group>";
+		};
+		A89418DD1C229D4100989D1C /* LJURLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				A89418DE1C229DD000989D1C /* LJRouterIndexTree.h */,
+				A89418DF1C229DD000989D1C /* LJRouterIndexTree.m */,
+				A89418E01C229DD000989D1C /* LJURLRouter.h */,
+				A89418E11C229DD000989D1C /* LJURLRouter.m */,
+				A89418E21C229DD000989D1C /* LJRouterPath.h */,
+				A89418E31C229DD000989D1C /* LJRouterPath.m */,
+				A89418ED1C22A04700989D1C /* UIViewController+LJRouter.h */,
+				A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */,
+			);
+			name = LJURLRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89418E51C229DD000989D1C /* LJURLRouter.m in Sources */,
+				A89418E41C229DD000989D1C /* LJRouterIndexTree.m in Sources */,
+				A89418EF1C22A04700989D1C /* UIViewController+LJRouter.m in Sources */,
+				A89418F21C22A5AC00989D1C /* RoutableModel.m in Sources */,
+				A89418EC1C229E9C00989D1C /* ProfileViewController.m in Sources */,
 				A89418B21C229D3500989D1C /* ViewController.m in Sources */,
+				A89418E61C229DD000989D1C /* LJRouterPath.m in Sources */,
 				A89418AF1C229D3500989D1C /* AppDelegate.m in Sources */,
+				A89418EB1C229E9C00989D1C /* HomeViewController.m in Sources */,
 				A89418AC1C229D3500989D1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +548,7 @@
 				A89418D61C229D3500989D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A89418D71C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +557,7 @@
 				A89418D91C229D3500989D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A89418DA1C229D3500989D1C /* Build configuration list for PBXNativeTarget "LJURLRouterExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +566,7 @@
 				A89418DC1C229D3500989D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
