@@ -14,7 +14,7 @@
 
 @end
 
-static const NSString *kLJControllerRouterClassKey = @"ljrouter_class";
+static const NSString *kLJURLRouterClassKey = @"ljrouter_class";
 
 @implementation LJRouterIndexTree
 
@@ -45,7 +45,7 @@ static const NSString *kLJControllerRouterClassKey = @"ljrouter_class";
         [tree.dict setObject:firstTree forKey:firstComponent];
     }
     if (components.count == 1) {
-        [firstTree.dict setObject:clazz forKey:kLJControllerRouterClassKey];
+        [firstTree.dict setObject:clazz forKey:kLJURLRouterClassKey];
         return;
     }
     NSMutableArray *array = [NSMutableArray arrayWithArray:components];
@@ -93,7 +93,7 @@ static const NSString *kLJControllerRouterClassKey = @"ljrouter_class";
             tree = (LJRouterIndexTree *)obj;
         }
         if (length == path.components.count - 1) {
-            id obj = [tree.dict objectForKey:kLJControllerRouterClassKey];
+            id obj = [tree.dict objectForKey:kLJURLRouterClassKey];
             if (obj) {
                 Class clazz = (Class)obj;
                 SEL INIT_SELECTOR = sel_registerName("initWithRouterParams:");

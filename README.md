@@ -14,13 +14,13 @@ Almost other routers are limited to controller or block, while LJURLRouter can r
 
 Register url formats and the matching class.
 
-```
+```objective-c
 [[LJURLRouter sharedRouter] registerURL:YOUR_URL_FORMAT forClass:[YOUR_CLASS_NAME class]];
 ```
 
 for example:
 
-```
+```objective-c
 [[LJURLRouter sharedRouter] registerURL:@"/profile/:profile_id" forClass:[ProfileViewController class]];
 ```
 
@@ -28,13 +28,13 @@ for example:
 
 Get matching object instance from URL. Params will be parsed automatically
 
-```
+```objective-c
 id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:YOUR_URL_HERE];
 ```
 
 for example:
 
-```
+```objective-c
 id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?param1=hello&param2=world"];
 ```
 
@@ -42,7 +42,7 @@ id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?pa
 
 LJURLRouter also provides a category of UIViewController for convienient use.
 
-```
+```objective-c
 [controller openURL:@"/profile/123?param1=hello&param2=world"]
 ```
 
@@ -60,7 +60,7 @@ Grab the source file into your project.
 
 Or use cocoapods. Here is an example of your podfile:
 
-```
+```objective-c
 pod 'LJURLRouter'
 ```
 
@@ -80,24 +80,24 @@ LJURLRouter is available under the MIT license. See the LICENSE file for more in
 
 ####注册URL和class的映射关系####
 
-```
+```objective-c
 [[LJURLRouter sharedRouter] registerURL:YOUR_URL_FORMAT forClass:[YOUR_CLASS_NAME class]];
 ```
 
 例子:
 
-```
+```objective-c
 [[LJURLRouter sharedRouter] registerURL:@"/profile/:profile_id" forClass:[ProfileViewController class]];
 ```
 ####根据URL获得相应的对象实例####
 
-```
+```objective-c
 id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:YOUR_URL_HERE];
 ```
 
 例子:
 
-```
+```objective-c
 id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?param1=hello&param2=world"];
 ```
 
@@ -105,7 +105,7 @@ id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?pa
 
 提供了一个UIViewController的category，可以方便地进行controller之间的跳转
 
-```
+```objective-c
 [controller openURL:@"/profile/123?param1=hello&param2=world"]
 ```
 
@@ -119,7 +119,7 @@ id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/profile/123?pa
 
 可以直接把源码放到你的工程里，或者使用CocoaPods:
 
-```
+```objective-c
 pod 'LJURLRouter'
 ```
 
