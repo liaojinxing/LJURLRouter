@@ -8,6 +8,15 @@ There are many open source routers, why make this wheel again?
 
 Almost other routers are limited to controller or block, while LJURLRouter can route any object.
 
+##Use cases##
+
+- In some cases, use an url to represent an object when communicating with server, will reduce network traffic.
+
+- Just openURL to navigate a controller, but not import the controller header file and call pushViewController...
+
+- Other than navigation inside app, you can handle navigation easily for url schema, deep link, 3D Touch, spotlight search.
+
+
 ##How to Use##
 
 ####Register url mapping####
@@ -75,6 +84,14 @@ LJURLRouter is available under the MIT license. See the LICENSE file for more in
 开源社区已经有很多不错的router，但并不满足需求。
 
 很多实现都是局限于controller和block，LJURLRouter主要是用于对象的映射，支持任意class.
+
+##使用场景##
+
+- 与server通信时，很多情况下无法直接传递对象，或者为了节省流量，可以通过定义一套url routing协议来进行通信。例如使用/user/123 代表123这个user，而无需返回一个user对象。
+
+- 处理端内页面的跳转时，可以直接openURL，而无需import controller，再pushViewController
+
+- 可以轻松地处理推送通知, url schema, deep link, 3D Touch, spotlight search 等跳转
 
 ##使用方法##
 
