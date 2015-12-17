@@ -20,8 +20,8 @@
 		A89418E61C229DD000989D1C /* LJRouterPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418E31C229DD000989D1C /* LJRouterPath.m */; settings = {ASSET_TAGS = (); }; };
 		A89418EB1C229E9C00989D1C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418E81C229E9C00989D1C /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		A89418EC1C229E9C00989D1C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418EA1C229E9C00989D1C /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
-		A89418EF1C22A04700989D1C /* UIViewController+LJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */; settings = {ASSET_TAGS = (); }; };
 		A89418F21C22A5AC00989D1C /* RoutableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418F11C22A5AC00989D1C /* RoutableModel.m */; settings = {ASSET_TAGS = (); }; };
+		A89418F51C22D54C00989D1C /* UIViewController+LJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A89418F31C22D54C00989D1C /* UIViewController+LJRouter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,10 @@
 		A89418E81C229E9C00989D1C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A89418E91C229E9C00989D1C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		A89418EA1C229E9C00989D1C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		A89418ED1C22A04700989D1C /* UIViewController+LJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJRouter.h"; sourceTree = "<group>"; };
-		A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJRouter.m"; sourceTree = "<group>"; };
 		A89418F01C22A5AC00989D1C /* RoutableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutableModel.h; sourceTree = "<group>"; };
 		A89418F11C22A5AC00989D1C /* RoutableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutableModel.m; sourceTree = "<group>"; };
+		A89418F31C22D54C00989D1C /* UIViewController+LJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LJRouter.m"; path = "LJURLRouter/UIViewController+LJRouter.m"; sourceTree = "<group>"; };
+		A89418F41C22D54C00989D1C /* UIViewController+LJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LJRouter.h"; path = "LJURLRouter/UIViewController+LJRouter.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,14 +171,14 @@
 		A89418DD1C229D4100989D1C /* LJURLRouter */ = {
 			isa = PBXGroup;
 			children = (
+				A89418F31C22D54C00989D1C /* UIViewController+LJRouter.m */,
+				A89418F41C22D54C00989D1C /* UIViewController+LJRouter.h */,
 				A89418DE1C229DD000989D1C /* LJRouterIndexTree.h */,
 				A89418DF1C229DD000989D1C /* LJRouterIndexTree.m */,
 				A89418E01C229DD000989D1C /* LJURLRouter.h */,
 				A89418E11C229DD000989D1C /* LJURLRouter.m */,
 				A89418E21C229DD000989D1C /* LJRouterPath.h */,
 				A89418E31C229DD000989D1C /* LJRouterPath.m */,
-				A89418ED1C22A04700989D1C /* UIViewController+LJRouter.h */,
-				A89418EE1C22A04700989D1C /* UIViewController+LJRouter.m */,
 			);
 			name = LJURLRouter;
 			sourceTree = "<group>";
@@ -315,12 +315,12 @@
 			files = (
 				A89418E51C229DD000989D1C /* LJURLRouter.m in Sources */,
 				A89418E41C229DD000989D1C /* LJRouterIndexTree.m in Sources */,
-				A89418EF1C22A04700989D1C /* UIViewController+LJRouter.m in Sources */,
 				A89418F21C22A5AC00989D1C /* RoutableModel.m in Sources */,
 				A89418EC1C229E9C00989D1C /* ProfileViewController.m in Sources */,
 				A89418B21C229D3500989D1C /* ViewController.m in Sources */,
 				A89418E61C229DD000989D1C /* LJRouterPath.m in Sources */,
 				A89418AF1C229D3500989D1C /* AppDelegate.m in Sources */,
+				A89418F51C22D54C00989D1C /* UIViewController+LJRouter.m in Sources */,
 				A89418EB1C229E9C00989D1C /* HomeViewController.m in Sources */,
 				A89418AC1C229D3500989D1C /* main.m in Sources */,
 			);

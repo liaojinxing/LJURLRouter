@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LJURLRouter"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "URL Router for any object in iOS"
 
   s.description  = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Jinxing Liao" => "jinxingliao@gmail.com" }
    s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/liaojinxing/LJURLRouter.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/liaojinxing/LJURLRouter.git", :tag => "1.0.1" }
   s.source_files  = "LJURLRouter/**/*.{h,m}"
    s.framework  = "UIKit"
    s.requires_arc = true
