@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "UIViewController+LJRouter.h"
 #import "RoutableModel.h"
+#import "LJURLRouter.h"
 
 @implementation HomeViewController
 
@@ -52,8 +53,10 @@
 }
 
 - (void)routeInstance {
-    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/model/liao jinxing/{\"face\":\"handsome\"}"];
+    NSDictionary *dict;
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/model/liao jinxing/{\"face\":\"handsome\"}" parsedParameters:&dict];
     if ([instance isKindOfClass:[RoutableModel class]]) {
+        [(RoutableModel *)instance setupWithParameters:dict];
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSStringFromClass([instance class])
                                                                                  message:[(RoutableModel *)instance name]
                                                                           preferredStyle:UIAlertControllerStyleAlert];

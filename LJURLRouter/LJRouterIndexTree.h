@@ -14,6 +14,6 @@
 
 - (void)insertNodeWithRoutePath:(LJRouterPath *)path forClass:(Class)clazz;
 
-- (id)nodeWithRoutePath:(LJRouterPath *)path;
+- (id)nodeWithRoutePath:(LJRouterPath *)path parsedParameters:(NSDictionary **)parameters;
 
 @end

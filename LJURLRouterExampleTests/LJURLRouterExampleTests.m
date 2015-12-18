@@ -50,13 +50,14 @@
     XCTAssertTrue([instance isKindOfClass:[ProfileViewController class]]);
 }
 
-- (void)testRoutableModel {
+- (void)testParsedParameters {
     [[LJURLRouter sharedRouter] registerURL:@"/model/:name/:json/" forClass:[RoutableModel class]];
-    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/model/liao jinxing/{\"face\":\"handsome\"}"];
+    NSDictionary *dict;
+    id instance = [[LJURLRouter sharedRouter] instanceWithRouteURL:@"/model/liao jinxing/{\"face\":\"handsome\"}" parsedParameters:&dict];
     XCTAssertTrue([instance isKindOfClass:[RoutableModel class]]);
+    XCTAssertEqualObjects(dict[@"name"], @"liao jinxing");
     RoutableModel *model = (RoutableModel *)instance;
-    XCTAssertEqualObjects(model.name, @"liao jinxing");
-    XCTAssertEqual(model.dictFromJSON.allKeys.count, 1);
+    [model setupWithParameters:dict];
     XCTAssertEqualObjects([model.dictFromJSON objectForKey:@"face"], @"handsome");
 }
 

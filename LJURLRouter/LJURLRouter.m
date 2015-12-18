@@ -51,11 +51,15 @@
 }
 
 - (id)instanceWithRouteURL:(NSString *)URL {
+    return [self instanceWithRouteURL:URL parsedParameters:nil];
+}
+
+- (id)instanceWithRouteURL:(NSString *)URL parsedParameters:(NSDictionary *__autoreleasing *)parameters {
     LJRouterPath *path = [[LJRouterPath alloc] initWithRouterURL:URL];
     if (!path.schema && _defaultSchema) {
         path.schema = _defaultSchema;
     }
-    return [self.tree nodeWithRoutePath:path];
+    return [self.tree nodeWithRoutePath:path parsedParameters:parameters];
 }
 
 @end

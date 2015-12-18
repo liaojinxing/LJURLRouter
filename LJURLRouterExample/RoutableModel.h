@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LJURLRouter.h"
 
-@interface RoutableModel : NSObject <LJURLRoutable>
+@interface RoutableModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
 
 @property (nonatomic, strong) NSDictionary *dictFromJSON;
+
+- (void)setupWithParameters:(NSDictionary *)params;
 
 @end

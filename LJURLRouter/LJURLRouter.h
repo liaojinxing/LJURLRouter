@@ -34,6 +34,14 @@
  **/
 - (id)instanceWithRouteURL:(NSString *)URL;
 
+/**
+ return an object instance which match the URL, the parsed parameters will extracted automatically
+ @param URL to route (i.e. "/users/123)
+ @param parameters, parsed parameters result
+ @return object instance
+ **/
+- (id)instanceWithRouteURL:(NSString *)URL parsedParameters:(NSDictionary **)parameters;
+
 @end
 
 /**

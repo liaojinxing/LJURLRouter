@@ -53,11 +53,11 @@ static const NSString *kLJURLRouterClassKey = @"ljrouter_class";
     [self insertNodeWithPathComponents:[NSArray arrayWithArray:array] forClass:clazz intoTree:firstTree];
 }
 
-- (id)nodeWithRoutePath:(LJRouterPath *)path {
-    return [self nodeWithRouterPath:path inTree:self];
+- (id)nodeWithRoutePath:(LJRouterPath *)path parsedParameters:(NSDictionary **)parameters {
+    return [self nodeWithRouterPath:path inTree:self parsedParameters:parameters];
 }
 
-- (id)nodeWithRouterPath:(LJRouterPath *)path inTree:(LJRouterIndexTree *)tree {
+- (id)nodeWithRouterPath:(LJRouterPath *)path inTree:(LJRouterIndexTree *)tree parsedParameters:(NSDictionary **)parameters {
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:path.params];
     id instance = nil;
     if (path.schema) {
@@ -104,6 +104,9 @@ static const NSString *kLJURLRouterClassKey = @"ljrouter_class";
 #pragma clang diagnostic pop
                 } else {
                     instance = [[clazz alloc] init];
+                }
+                if (parameters) {
+                    *parameters = [NSDictionary dictionaryWithDictionary:params];
                 }
                 return instance;
             }
